@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flask — Hydration, reimagined.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Home">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M12 2c-.9 1.4-2.4 2.3-3.2 3.8-.9 1.6-.4 3.3.9 4.3-1.6.6-2.7 2.1-2.7 3.9 0 2.3 1.9 4.2 4.2 4.2s4.2-1.9 4.2-4.2c0-1.8-1.1-3.3-2.7-3.9 1.3-1 1.8-2.7.9-4.3C14.4 4.3 12.9 3.4 12 2z" fill="currentColor"/>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#tech">Tech</a></li>
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#specs">Specs</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#buy" class="nav-buy">Buy</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="overview">
+    <div class="hero-copy reveal">
+      <h1 class="hero-title">Flask</h1>
+      <p class="hero-sub">Stay cold. Stay bold.</p>
+      <p class="hero-price">From $44.95</p>
+      <div class="hero-cta">
+        <a href="#buy" class="btn btn-fill">Buy</a>
+        <a href="#tech" class="btn btn-link">Learn more ›</a>
+      </div>
+    </div>
+    <div class="hero-stage reveal">
+      <!-- CSS/SVG recreation of the bottle -->
+      <div class="bottle" id="bottle">
+        <div class="bottle-strap"></div>
+        <div class="bottle-cap"></div>
+        <div class="bottle-collar"></div>
+        <div class="bottle-body">
+          <svg class="bottle-logo" viewBox="0 0 24 24" width="46" height="46" aria-hidden="true">
+            <path d="M12 2c-.9 1.4-2.4 2.3-3.2 3.8-.9 1.6-.4 3.3.9 4.3-1.6.6-2.7 2.1-2.7 3.9 0 2.3 1.9 4.2 4.2 4.2s4.2-1.9 4.2-4.2c0-1.8-1.1-3.3-2.7-3.9 1.3-1 1.8-2.7.9-4.3C14.4 4.3 12.9 3.4 12 2z" fill="rgba(255,255,255,.92)"/>
+          </svg>
+          <span class="bottle-wordmark">Flask</span>
+        </div>
+        <div class="bottle-shadow"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MARQUEE HIGHLIGHTS ============ -->
+  <section class="strip">
+    <div class="strip-item reveal"><span class="big">24hrs</span><span class="lbl">cold</span></div>
+    <div class="strip-item reveal"><span class="big">12hrs</span><span class="lbl">hot</span></div>
+    <div class="strip-item reveal"><span class="big">32oz</span><span class="lbl">capacity</span></div>
+    <div class="strip-item reveal"><span class="big">18/8</span><span class="lbl">pro-grade steel</span></div>
+  </section>
+
+  <!-- ============ DESIGN ============ -->
+  <section class="feature dark" id="design">
+    <div class="feature-copy reveal">
+      <p class="eyebrow">Design</p>
+      <h2>Soft to hold.<br>Impossible to ignore.</h2>
+      <p class="body">A powder-coat finish in a serene periwinkle Fog, wrapped around a durable pro-grade body. Every curve is engineered to feel effortless in the hand.</p>
+    </div>
+  </section>
+
+  <!-- ============ TECH ============ -->
+  <section class="feature light" id="tech">
+    <div class="feature-copy reveal">
+      <p class="eyebrow">TempShield™ Insulation</p>
+      <h2>Temperature,<br>under your control.</h2>
+      <p class="body">Double-wall vacuum insulation keeps cold drinks cold for up to 24 hours and hot drinks hot for up to 12 — with zero condensation on the outside.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-icon">❄️</div>
+        <h3>Cold Lock</h3>
+        <p>Ice stays ice, all day long.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">🔥</div>
+        <h3>Heat Hold</h3>
+        <p>Coffee at temperature till noon.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">💧</div>
+        <h3>Sweat-Free</h3>
+        <p>No rings on your desk. Ever.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ COLORS ============ -->
+  <section class="feature light" id="colors">
+    <div class="feature-copy reveal">
+      <p class="eyebrow">Finishes</p>
+      <h2>Pick your mood.</h2>
+    </div>
+    <div class="swatches reveal">
+      <button class="swatch active" data-color="#c9d3ec" data-cap="#b3c1e2" aria-label="Fog"><span></span></button>
+      <button class="swatch" data-color="#e7d4d0" data-cap="#d8bfba" aria-label="Blush"><span></span></button>
+      <button class="swatch" data-color="#cbd8cf" data-cap="#b3c6ba" aria-label="Sage"><span></span></button>
+      <button class="swatch" data-color="#2f3136" data-cap="#1e2024" aria-label="Black"><span></span></button>
+      <button class="swatch" data-color="#f4d58d" data-cap="#e8c169" aria-label="Sunbeam"><span></span></button>
+    </div>
+    <p class="swatch-name reveal" id="swatchName">Fog</p>
+  </section>
+
+  <!-- ============ SPECS ============ -->
+  <section class="specs" id="specs">
+    <h2 class="reveal">The details.</h2>
+    <div class="spec-grid">
+      <div class="spec reveal"><dt>Capacity</dt><dd>32 fl oz / 946 mL</dd></div>
+      <div class="spec reveal"><dt>Material</dt><dd>18/8 Pro-Grade Stainless Steel</dd></div>
+      <div class="spec reveal"><dt>Insulation</dt><dd>TempShield™ Double-Wall Vacuum</dd></div>
+      <div class="spec reveal"><dt>Cold</dt><dd>Up to 24 hours</dd></div>
+      <div class="spec reveal"><dt>Hot</dt><dd>Up to 12 hours</dd></div>
+      <div class="spec reveal"><dt>Cap</dt><dd>Flex Cap with carry loop</dd></div>
+      <div class="spec reveal"><dt>Mouth</dt><dd>Wide, fits ice cubes</dd></div>
+      <div class="spec reveal"><dt>Finish</dt><dd>Powder-coat, dishwasher safe</dd></div>
+    </div>
+  </section>
+
+  <!-- ============ BUY / CTA ============ -->
+  <section class="buy" id="buy">
+    <h2 class="reveal">Flask.</h2>
+    <p class="reveal">Hydration, reimagined.</p>
+    <p class="buy-price reveal">From $44.95</p>
+    <a href="#overview" class="btn btn-fill reveal">Buy</a>
+  </section>
+
+  <footer class="footer">
+    <p>This is a design demo inspired by Apple's web aesthetic. Not affiliated with Apple or Hydro Flask.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
